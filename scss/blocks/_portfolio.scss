@@ -1,0 +1,193 @@
+/**
+ * Portfolio
+ */
+
+.portfolio-filters{
+    margin-bottom: 25px;
+    line-height: 1;
+    button{
+        display: inline-block;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: $body-color;
+        font-weight: 500;
+        line-height: 1;
+        border: 0;
+        outline: 0;
+        padding: 0 10px;
+        margin: 0 20px;
+        margin-bottom: 10px;
+        position: relative;
+        cursor: pointer;
+
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 1px;
+            width: 100%;
+            background: $heading-color;
+            transform: scaleX(0);
+            transform-origin: center right;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        &:hover, &.is-checked{
+            &::before{
+                transform: scale(1);
+                transform-origin: center left;
+            }
+        }
+
+    }
+}
+
+@media #{$md-layout}{
+    .portfolio-filters {
+        margin-bottom: 10px;
+        button{
+            margin-bottom: 10px; 
+        }
+    }
+}
+@media #{$sm-layout}{
+    .portfolio-filters {
+        margin-bottom: 10px;
+        button {
+            margin: 0 10px;
+            margin-bottom: 10px;
+            &:first-child{
+                margin-left: 10px;
+            }
+            &:last-child{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+
+.portfolio-margin-fixer{
+    margin-top: -30px;
+}
+.portfolio{
+    position: relative;
+    background: #f1f1f1;
+    margin-top: 30px;
+    overflow: hidden;
+
+    .portfolio-image{
+        img{
+            width: 100%;
+            transform: scale(1);
+            transition: all 0.4s ease-out 0s;
+        }
+    }
+
+    .portfolio-content{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        background: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: all 0.4s ease-out 0s;
+
+        a.portfolio-zoom-button{
+            height: 80px;
+            width: 80px;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -40px;
+            margin-top: -40px;
+            transform: scale(0.8);
+            transition: all 0.3s ease-out 0s;
+
+            &::before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background: #555555;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                height: 1px;
+                width: 100%;
+                background: #555555;
+            }
+
+            &:hover{
+                transform: scale(1);
+            }
+
+        }
+
+        h5{
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            a{
+                color: $heading-color;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+
+        h6{
+            margin-bottom: 0;
+            letter-spacing: 2px;
+            font-weight: 400;
+            a{
+                color: $heading-color;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+
+    &:hover{
+        .portfolio-image{
+            img{
+                transform: scale(1.3);
+            }
+        }
+        .portfolio-content{
+            top: 0;
+        }
+    }
+
+}
+
+@media #{$lg-layout}{
+    .portfolio{
+        .portfolio-content{
+            a.portfolio-zoom-button {
+                height: 65px;
+                width: 65px;
+            }
+        } 
+    }
+}

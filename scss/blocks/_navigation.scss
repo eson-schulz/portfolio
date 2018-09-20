@@ -1,0 +1,172 @@
+/**
+ * Navigation
+ */
+
+nav.main-navigation{
+    & > ul{
+        & > li{
+            a{
+                position: relative;
+                padding: 40px 20px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 20px;
+                    top: calc(50% + 12px);
+                    width: calc(100% - 40px);
+                    height: 1px;
+                    background: #000000;
+                    transform: scaleX(0);
+                    transition: all 0.3s ease-in-out 0s;
+                }
+            }
+            &:hover{
+                a{
+                    &::before{
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+    ul{
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 0;
+        li{
+            display: inline-block;
+            font-size: 16px;
+            a{
+                display: inline-block;
+                line-height: 24px;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 400;
+                color: $heading-color;
+                letter-spacing: 1px;
+            }
+            &:hover{
+                a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+@media #{$lg-layout}{
+    nav.main-navigation ul li a{
+        padding: 40px 15px;
+    }
+}
+
+
+
+/* Dropdown Styles */
+nav.main-navigation{
+    ul{
+        li{
+            position: relative;
+            ul{
+                border-top: 3px solid $theme-color;
+                position: absolute;
+                left: 0;
+                width: 250px;
+                top: 100%;
+                background: #ffffff;
+                text-align: left;
+                padding: 15px 0;
+                box-shadow: 0 2px 3px rgba(#000, 0.15);
+                transition: all 0.2s ease-out 0s;
+                visibility: hidden;
+                transform: scaleY(0);
+                transform-origin: 0 0;
+                z-index: 10;
+                li{
+                    display: block;
+                    a{
+                        display: block;
+                        padding: 3px 20px;
+                        font-family: $body-font;
+                        color: $body-color;
+                        font-weight: 500;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 7px;
+                            top: 50%;
+                            height: 1px;
+                            width: 7px;
+                            border-radius: 100px;
+                            background: #000;
+                            opacity: 0;
+                            transition: all 0.3s ease-in-out 0s;
+                        }
+                        &:hover{
+                            color: $theme-color;
+                            &::before{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    ul{
+                        left: calc(100% + 1px);
+                        top: 0;
+                    }
+                }
+            }
+            &:hover{
+                & > ul{
+                    visibility: visible;
+                    transform: scaleY(1);
+                }
+            }
+        }
+    }
+}
+
+
+.fixed-header{
+    nav.main-navigation > ul > li a {
+        padding: 20px 20px;
+    }
+    nav.main-navigation ul li ul li a{
+        padding: 3px 20px;
+    }
+}
+
+.sticky-header{
+    &.is-sticky{
+        nav.main-navigation > ul > li a{
+            padding: 19px 20px;
+        }
+        nav.main-navigation ul li ul li a{
+            padding: 3px 20px;
+        }
+    }
+}
+
+
+@media #{$lg-layout}{
+    .fixed-header{
+        nav.main-navigation > ul > li a {
+            padding: 20px 15px;
+        }
+        nav.main-navigation ul li ul li a{
+            padding: 3px 15px;
+        }
+    }
+    .sticky-header{
+        &.is-sticky{
+            nav.main-navigation > ul > li a{
+                padding: 19px 15px;
+            }
+            nav.main-navigation ul li ul li a{
+                padding: 3px 15px;
+            }
+        }
+    }
+}

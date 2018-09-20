@@ -1,0 +1,66 @@
+/**
+ * Newsletter
+ */
+
+.newsletterbox{
+    padding-right: 15px;
+    border-right: 1px solid #eaeaea;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h5{
+        font-size: 16px;
+        line-height: 22px;
+        color: #434343;
+        font-weight: 400;
+        font-family: $body-font;
+    }
+    form{
+        display: flex;
+        input{
+            background: $bg-grey;
+            margin-right: 5px;
+            height: 38px;
+            border: 1px solid #eaeaea;
+            font-family: $body-font;
+            font-size: 13px;
+            &:focus{
+                border-color: #434343;
+            }
+        }
+        button[type="submit"], input[type="submit"]{
+            flex-grow: 100;
+            font-size: 13px;
+            padding: 0 25px;
+            height: 38px;
+            border: 2px solid #d5d5d5;
+            line-height: 34px;
+            border-radius: 0;
+            margin: 0;
+            text-transform: uppercase;
+            background-color: #fff;
+            font-family: $body-font;
+            transition: all 0.3s ease-out 0s;
+            &:hover{
+                color: #ffffff;
+                background: #434343;
+                border-color: #434343;
+            }
+        }
+    }
+}
+
+@media #{$md-layout}{
+    .newsletterbox{
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #eaeaea;
+    }
+}
+
+@media #{$sm-layout}{
+    .newsletterbox{
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #eaeaea;
+    }
+}

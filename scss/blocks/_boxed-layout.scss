@@ -1,0 +1,39 @@
+/**
+ * Boxed Layout
+ */
+
+.boxed-layout{
+    margin: 0 auto;
+    max-width: 1500px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+@media #{$xlg-layout}{
+    .boxed-layout{
+        max-width: 1230px;
+    }
+}
+
+@media #{$lg-layout}{
+    .boxed-layout{
+        max-width: 1022px;
+    }
+}
+
+@media #{$md-layout}{
+    .boxed-layout{
+        max-width: 798px;
+    }
+}
+
+@media #{$sm-layout}{
+    .boxed-layout{
+        max-width: 596px;
+    }
+}
+
+@media #{$xs-layout}{
+    .boxed-layout{
+        max-width: 480px;
+    }
+}

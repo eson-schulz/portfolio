@@ -1,0 +1,98 @@
+/**
+ * Portfolio Details
+ */
+
+.portfolio-details-image{
+    img{
+        width: 100%;
+    }
+}
+.portfolio-details-meta ul {
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: 1px solid #e5e5e5;
+    padding: 0 20px;
+    margin-bottom: 0;
+    list-style: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    li {
+        list-style: none;
+        border-bottom: 1px solid #e5e5e5;
+        color: #666;
+        padding: 10px 0;
+        &:last-child {
+            border-bottom: 0 none;
+        }
+        i {
+            color: #444;
+            font-size: 16px;
+            line-height: normal;
+            margin-right: 20px;
+        }
+        span {
+            color: #444;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+        a{
+            color: $body-color;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}
+.portfolio-details-info{
+    .portfolio-title{
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .post-share{
+        border-bottom: 1px solid #e5e5e5;
+        border-top: 1px solid #e5e5e5;
+        overflow: hidden;
+        padding: 10px 0;
+        margin-top: 30px;
+        h6{
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        ul {
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                display: inline-block;
+                list-style: none;
+                margin: 0 6px;
+                font-size: 14px;
+                a {
+                    display: block;
+                    color: $body-color;
+                    &:hover{
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$md-layout}{
+    .portfolio-details-info{
+        margin-top: 50px;
+    }
+}
+
+@media #{$sm-layout}{
+    .portfolio-details-info{
+        margin-top: 50px;
+    }
+}

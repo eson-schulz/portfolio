@@ -1,0 +1,89 @@
+/**
+ * Team Member
+ */
+
+.team-wrapper {
+    border: 1px solid #e7e7e7;
+}
+
+.team-member {
+    position: relative;
+}
+
+.team-member>img {
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.team-member::before {
+    background: transparent none repeat scroll 0 0;
+    content: " ";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
+    width: 100%;
+    z-index: 1;
+}
+
+.team-wrapper:hover .team-member::before {
+    background: rgba(33, 40, 45, 0.55);
+}
+
+.team-info {
+    padding: 15px 0;
+}
+
+.team-icon {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+.team-icon > a {
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 36px;
+    margin: 0 7px;
+    opacity: 0;
+    text-align: center;
+    visibility: hidden;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.team-icon > a:hover {
+    background: #fff;
+    color: #666
+}
+
+.team-wrapper:hover .team-icon > a {
+    opacity: 1;
+    visibility: visible;
+    margin: 0 3px
+}
+
+.team-info h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.team-info span {
+    color: #666;
+    text-transform: uppercase;
+}
+
+.team-member>img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}

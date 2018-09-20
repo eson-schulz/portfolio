@@ -1,0 +1,94 @@
+/**
+ * Pricing
+ */
+
+.single-pricing {
+    border: 1px solid #ddd;
+    text-align: center;
+    .pricing-top{
+        display: block;
+        overflow: hidden;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 0;
+            padding: 25px 30px;
+            position: relative;
+            text-transform: uppercase;
+            background: $bg-grey;
+            transition: all 0.4s ease-in-out 0s;
+        }
+        p {
+            font-family: dosis;
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0 30px;
+            padding: 25px 0;
+            border-bottom: 1px solid #ddd;
+            span {
+                font-size: 18px;
+                font-weight: normal;
+            }
+        }
+    }
+    .pricing-bottom{
+        padding: 40px 30px;
+        ul {
+            margin-bottom: 0;
+            padding: 0;
+            padding-bottom: 40px;
+            li {
+                list-style: none;
+                color: #333333;
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 8px;
+                text-transform: capitalize;
+                &:last-child {
+                    padding-bottom: 0px;
+                }
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    &:hover,
+    &.is-active{
+        .pricing-top{
+            h3{
+                background: #222222;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &.is-active{
+        .pricing-bottom{
+            .button:link,
+            .button:visited{
+                background: #222222;
+            }
+        }
+    }
+
+}
+
+
+
+@media #{$xs-layout}{
+    .single-pricing{
+        .pricing-top h3 {
+            padding: 25px 20px;
+            font-size: 22px;
+        } 
+        .pricing-top p {
+            margin: 0 20px;
+        }
+        .single-pricing .pricing-bottom {
+            padding: 40px 20px;
+        }
+    }
+}

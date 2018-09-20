@@ -1,0 +1,63 @@
+/**
+ * Service
+ */
+
+.service{
+    padding: 50px 30px;
+    background: #ffffff;
+    box-shadow: 0 7px 15px rgba(#555555, 0.2);
+    margin-top: 30px;
+
+    h5{
+        letter-spacing: 3px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 0;
+        padding-right: 10px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background: $heading-color;
+            left: 0;
+            top: 50%;
+            height: 1px;
+            width: 100%;
+            transform: scale(0);
+            transition: all 0.4s ease-out 0s;
+        }
+    }
+    p{
+        letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+
+    &.text-center{
+        h5{
+            padding: 0 10px ;
+        }
+    }
+
+    &.text-right{
+        h5{
+            padding: 0;
+            padding-left: 10px;
+        }
+    }
+
+    &:hover{
+        h5{
+            &::before{
+                transform: scale(1);
+            }
+        }
+    }
+
+}
+
+
+@media #{$xs-layout}{
+    .service {
+        padding: 50px 20px;
+    }
+}

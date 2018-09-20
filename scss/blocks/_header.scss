@@ -1,0 +1,149 @@
+/**
+ * Header
+ */
+
+.header-logo{
+    line-height: 1;
+    a{
+        display: inline-block;
+    }
+}
+
+.header-navigation-trigger{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+    @include clearfix();
+    span{
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: #000000;
+        float: right;
+        transition: all 0.3s ease;
+        transform-origin: center center; 
+        & + span{
+            margin-top: 5px;
+        }
+        &:last-child{
+            width: 75%;
+        }
+    }
+    &:hover, &.active{
+        span{
+            width: 100%;
+        }
+    }
+    &.is-active{
+        transform: rotate(225deg);
+        span{
+            &:first-child{
+                transform: rotate(90deg) translateX(7px);
+            }
+            &:last-child{
+                width: 100%;
+                transform: rotate(90deg) translateX(-7px);
+            }
+        }
+    }
+}
+
+.header-navigation{
+    position: relative;
+    .main-navigation{
+        position: absolute;
+        right: 100%;
+        z-index: 1;
+        width: 850px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: auto;
+        text-align: right;
+        & > ul{
+            text-align: left;
+            display: inline-block;
+            margin-right: 30px;
+            transform: scale(0);
+            transform-origin: center right;
+            transition: all 0.4s ease-out 0s;
+        }
+        &.is-visible{
+            & > ul{
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+
+
+
+/* Fixed Header */
+.fixed-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 80;
+}
+
+
+
+/* Sticky Header */
+.sticky-header{
+    &.is-sticky{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 400;
+        background: #ffffff;
+        box-shadow: 0 0 3px rgba(0,0,0,0.1);
+        animation: crSlideInDown 0.5s ease-out 0s 1 both;
+        .header-inner{
+            padding: 15px 0;
+        }
+    }
+}
+
+
+
+/* Mobile Menu */
+.mobile-menu{
+    position: relative;
+    z-index: 8;
+    a.meanmenu-reveal{
+        left: auto !important;
+        right: 0 !important;
+    }
+    a.mobile-logo{
+        position: absolute;
+        left: 0;
+        top: 23px;
+        height: auto;
+        width: auto;
+        line-height: 1;
+        z-index: 100;
+        img{
+            max-height: 100%;
+            width: auto;
+        }
+    }
+    a.meanmenu-reveal.meanclose .white{
+        display: none;
+    }
+}

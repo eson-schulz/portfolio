@@ -4,13 +4,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Karigor - Portfolio Bootstrap4 Template</title>
+	<title>Ethan Schulz - Portfolio</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Favicon -->
+	<!-- TODO - Add Favicon
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/icon.png">
+	-->
 
 	<!-- Google font (font-family: 'Dosis', sans-serif;) -->
 	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
@@ -21,6 +23,7 @@
 
 	<!-- Style Css -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="template-style.css">
 
 	<!-- Custom Styles -->
 	<link rel="stylesheet" href="css/custom.css">
@@ -35,95 +38,27 @@
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="wrapper boxed-layout">
-
-		<!-- Header -->
-		<header class="header sticky-header fixed-header">
-			<div class="container">
-				<div class="header-inner d-none d-lg-flex">
-					<div class="header-logo">
-						<a href="index.html">
-							<img src="img/logo/logo-dark.png" alt="logo">
-						</a>
-					</div>
-					<div class="header-navigation">
-						<button class="header-navigation-trigger">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
-						<nav class="main-navigation">
-							<ul>
-                                <li><a href="index.html">HOME</a>
-                                    <ul>
-                                        <li><a href="index.html">Home Default Version</a></li>
-                                        <li><a href="index-dark.html">Home Dark Version</a></li>
-                                        <li><a href="index-boxed.html">Home Boxed Layout</a></li>
-                                    </ul>
-                                </li>
-								<li><a href="about.html">ABOUT US</a></li>
-                                <li><a href="portfolio.html">PORTFOLIO</a>
-                                    <ul>
-                                        <li><a href="portfolio-2-column.html">Portfolio 2 Column</a></li>
-                                        <li><a href="portfolio.html">Portfolio 3 Column</a></li>
-                                        <li><a href="portfolio-4-column.html">Portfolio 4 Column</a></li>
-                                        <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
-                                        <li><a href="portfolio-details.html">Portfolio Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="blog.html">BLOG</a>
-                                    <ul>
-                                        <li><a href="blog.html">Blog Fullwidth</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a>
-                                            <ul>
-												<li><a href="blog-details.html">Blog Details</a>
-                                                <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                                                <li><a href="blog-details-left-sidebar.html">Blog Details Left Sidebar</a></li>
-                                            </ul>                                        
-                                        </li>
-                                    </ul>
-                                </li>
-								<li><a href="pricing.html">PRICING</a></li>
-								<li><a href="services.html">SERVICES</a></li>
-								<li><a href="contact.html">CONTACT</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="mobile-menu-wrapper d-block d-lg-none">
-					<div class="mobile-menu clearfix">
-						<a href="index.html" class="mobile-logo">
-							<img src="img/logo/logo-dark.png" alt="mobile logo">
-						</a>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!--// Header -->
-
 		<!-- Hero Area -->
 		<div class="hero-area bg-white">
 			<div class="container">
-				<div class="hero-area-inner">
-					<div class="hero-area-text">
-						<h1>
-							HELLO, <br>
-							I AM  MAKX  REZ...
-						</h1>
-						<h5>PROFESSIONAL _WEB DESIGNER & DEVELOPER</h5>
-						<a href="about.html" class="readmore">ABOUT ME</a>
+				<div class="row header-content">
+					<div class="col-sm-6 hero-area-text">
+							<h1>
+								HELLO, <br>
+								ETHAN SCHULZ HERE
+							</h1>
+							<h5>STUDENT AND SOFTWARE DEVELOPMENT ENGINEER</h5>
+							<!--<a href="about.html" class="readmore">ABOUT ME</a>-->
 					</div>
-					<div class="hero-area-image">
-						<img src="img/slider/slider-image-1.png" alt="man mask">
-					</div>
-					<div class="social-icons">
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						</ul>
+					<div class="col-sm-6">
+							<img class="profile-image" src="img/author-image/me.png" alt="man mask">
+							<div class="social-icons profile-icons">
+								<ul>
+									<li><a href="pdf/ethan.pdf"><i class="fa fa-file-text fa-2x" title="Resume"></i></a></li> 
+									<li><a href="https://github.com/eson-schulz"><i class="fa fa-github fa-2x" title="Github"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/schulzethan/"><i class="fa fa-linkedin fa-2x" title="LinkedIn"></i></a></li>
+								</ul>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -133,8 +68,62 @@
 		<!-- Page Conttent -->
 		<main class="page-content">
 
-			<!-- Portfolios Ara -->
-			<div class="cr-section portfolios-area section-padding-lg bg-white">
+			<!-- Service Area -->
+			<div class="cr-section services-area section-padding-lg bg-white">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-7">
+							<div class="section-title text-center">
+								<h2>EXPERIENCE </h2>
+								<p>My most recent jobs</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						
+						<!-- Single Service -->
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="service text-center">
+								<img src="img/logo/amazon-logo.jpg" class="company-image"/>
+								<br />
+								<h5 class="no-margin-bottom">AMAZON</h5>
+								<h6>SOFTWARE DEVELOPMENT ENGINEER</h6>
+								<p>Built code at Amazon scale for a secret project on the retail website’s cart. Dove deep with Spring MVC, Java, Javascript, and A/B testing for the fullstack web application.</p>
+							</div>
+						</div>
+						<!--// Single Service -->
+						
+						<!-- Single Service -->
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="service text-center">
+								<img src="img/logo/revtrak-logo.png" class="company-image revtrak-adjustment"/>
+								<br />
+								<h5 class="no-margin-bottom">REVTRAK</h5>
+								<h6>SOFTWARE DEVELOPMENT ENGINEER</h6>
+								<p>Built critical OAuth flow for Stripe-like payment processing application. Coded on a REST API in .NET Core in combination with a Node.js, React, and Redux frontend in an Agile environment.</p>
+							</div>
+						</div>
+						<!--// Single Service -->
+						
+						<!-- Single Service -->
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="service text-center">
+								<img src="img/logo/umn-logo-2.png" class="company-image"/>
+								<br />
+								<h5 class="no-margin-bottom">UNIVERSITY OF MN</h5>
+								<h6>UNDERGRADUATE TEACHING ASSISTANT</h6>
+								<p>Provided teaching to help students learn the foundations of programming in Intro to CSci, Intro to C++, and Intro to Java. Prepared material for lab to provide an exemplary learning environment.</p>
+							</div>
+						</div>
+						<!--// Single Service -->
+					</div>
+				</div>
+			</div>
+			<!--// Service Area -->
+
+			<!-- Portfolios Area -->
+			<!-- TODO - Add portfolio items
+			<div class="cr-section portfolios-area section-padding-bottom-lg bg-white">
 				<div class="container">
 
 					<div class="portfolio-filters text-center">
@@ -146,7 +135,6 @@
 
 					<div class="row portfolios-wrapper portfolios-zoom-button-holder">
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -159,9 +147,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -174,9 +160,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop portfolio-filter-design">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -189,9 +173,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -204,9 +186,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -219,9 +199,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-photoshop portfolio-filter-design">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -234,9 +212,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -249,9 +225,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-design">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -264,9 +238,7 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
 						
-						<!-- Single Portfolio -->
 						<div class="col-lg-4 col-md-6 col-12 portfolio-item portfolio-filter-graphic portfolio-filter-design">
 							<div class="portfolio">
 								<div class="portfolio-image">
@@ -279,96 +251,29 @@
 								</div>
 							</div>
 						</div>
-						<!--// Single Portfolio -->
-
 					</div>
 				</div>
+			</div>
+			-->
+			<div class="cr-section bg-white section-padding-sm temp-footer">
+				<h5 class="no-margin-bottom">&lt;Coming soon: my projects and student groups&gt;</h5>
+				<p>In the meantime, check out my 
+					<a href="pdf/ethan.pdf">resume</a>,
+					<a href="https://github.com/eson-schulz">Github</a>,
+					and 
+					<a href="https://www.linkedin.com/in/schulzethan/">LinkedIn</a>!
+				</p>
 			</div>
 			<!--// Portfolios Ara -->
-
-			<!-- Service Area -->
-			<div class="cr-section services-area section-padding-bottom-lg bg-white">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-7">
-							<div class="section-title text-center">
-								<h2>WHICH I PROVIDE</h2>
-								<p>Here is the services which i know & provide all the time</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						
-						<!-- Single Service -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="service text-center">
-								<h5>BRANDING</h5>
-								<p>Random text. It has roots in classical Latin making it over 2000 years old.</p>
-							</div>
-						</div>
-						<!--// Single Service -->
-						
-						<!-- Single Service -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="service text-center">
-								<h5>PHOTOSHOP</h5>
-								<p>Random text. It has roots in classical Latin making it over 2000 years old.</p>
-							</div>
-						</div>
-						<!--// Single Service -->
-						
-						<!-- Single Service -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="service text-center">
-								<h5>WEB DESIGN</h5>
-								<p>Random text. It has roots in classical Latin making it over 2000 years old.</p>
-							</div>
-						</div>
-						<!--// Single Service -->
-						
-						<!-- Single Service -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="service text-center">
-								<h5>PHOTOSHOP</h5>
-								<p>Random text. It has roots in classical Latin making it over 2000 years old.</p>
-							</div>
-						</div>
-						<!--// Single Service -->
-						
-						<!-- Single Service -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="service text-center">
-								<h5>WEB DESIGN</h5>
-								<p>Random text. It has roots in classical Latin making it over 2000 years old.</p>
-							</div>
-						</div>
-						<!--// Single Service -->
-						
-						<!-- Single Service -->
-						<div class="col-lg-4 col-md-6 col-12">
-							<div class="service text-center">
-								<h5>BRANDING</h5>
-								<p>Random text. It has roots in classical Latin making it over 2000 years old.</p>
-							</div>
-						</div>
-						<!--// Single Service -->
-
-					</div>
-				</div>
-			</div>
-			<!--// Service Area -->
-
 		</main>
-		<!--// Page Conttent -->
+		<!--// Page Content -->
 
 		<!-- Footer Area -->
-		<footer class="footer-area bg-white">
+		<footer class="footer-area bg-white footer-spacing">
 			<div class="container">
 				<ul class="footer-inner">
-					<li>34/5 evergreen road, concord city <br> New work, United States</li>
-					<li><a href="tel://+008341237654">+00834 123 7654</a></li>
-					<li><a href="mailto://info@example.com">info@example.com</a></li>
-					<li>Copyright &copy; <a href="#">HasTech</a> 2018. All Right Reserved</li>
+					<li><a href="mailto://contact@eschulz.com">contact@eschulz.com</a></li>
+					<li>Copyright &copy; <a href="#">Ethan Schulz</a> 2018. All Right Reserved</li>
 				</ul>
 			</div>
 		</footer>

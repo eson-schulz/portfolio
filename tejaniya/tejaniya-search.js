@@ -24,7 +24,14 @@ function showResults() {
             var cleanSearchText = searchText.toLowerCase();
 
             if (cleanClipTitle.includes(cleanSearchText)) {
-                output.innerText += ("\n" + clip.title + "\n" + clip.content + "\n");
+                const header = document.createElement("strong");
+                header.textContent = clip.title + "\n";
+                const body = document.createElement("p");
+                body.textContent = clip.content;
+                body.style = "margin-bottom: 30px;"
+
+                output.appendChild(header);
+                output.appendChild(body);
                 clipToShowCount++;
             }
         });

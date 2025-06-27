@@ -21,9 +21,10 @@ function showResults() {
             }
 
             var cleanClipTitle = clip.title.toLowerCase();
+            var cleanClipContent = clip.content.toLowerCase();
             var cleanSearchText = searchText.toLowerCase();
 
-            if (cleanClipTitle.includes(cleanSearchText)) {
+            if (cleanClipTitle.includes(cleanSearchText) || cleanClipContent.includes(cleanSearchText)) {
                 const header = document.createElement("strong");
                 header.textContent = clip.title + "\n";
                 const body = document.createElement("p");

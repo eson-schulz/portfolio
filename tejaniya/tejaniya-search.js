@@ -15,6 +15,12 @@ function showResults() {
 
     tejaniyaClips.then((clips) => {
         var clipToShowCount = 0;
+        var cleanSearchText = searchText.toLowerCase();
+
+        if (cleanSearchText == "") {
+            return;
+        }
+
         clips.forEach(clip => {
             if (clipToShowCount > MAX_RESULTS) {
                 return;
@@ -22,7 +28,6 @@ function showResults() {
 
             var cleanClipTitle = clip.title.toLowerCase();
             var cleanClipContent = clip.content.toLowerCase();
-            var cleanSearchText = searchText.toLowerCase();
 
             if (cleanClipTitle.includes(cleanSearchText) || cleanClipContent.includes(cleanSearchText)) {
                 const header = document.createElement("strong");

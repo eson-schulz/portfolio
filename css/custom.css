@@ -14,3 +14,11 @@
 .cool-photo {
 	padding-top: 20px;
 }
+
+.show-underline {
+	text-decoration: underline;
+}
+
+.footer-spacing {
+    margin-bottom: 40px;
+}
